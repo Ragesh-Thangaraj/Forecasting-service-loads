@@ -45,17 +45,24 @@ pip install numpy pandas matplotlib scikit-learn tensorflow
 ## Model Architecture
 The model consists of the following layers:
 
-### LSTM: A Long Short-Term Memory layer with 256 units to process sequential data.
-### Dense: A Dense output layer with 1 unit to predict the next point in the sequence.
+### LSTM:
+A Long Short-Term Memory layer with 256 units to process sequential data.
+### Dense:
+A Dense output layer with 1 unit to predict the next point in the sequence.
 
 
 ## Steps to Run the Project
 
 -Load Dataset: The dataset is loaded from the requests_every_hour.csv file.
+
 -Data Preprocessing: Scaling of the data using StandardScaler. Creating sequences of data for the model using a custom function.
+
 -Build LSTM Model: The model is built using the Keras Sequential API with LSTM layers and Dense layers.
+
 -Train the Model: The model is trained on the first 4 weeks of data with a lookback period of 1 week (168 hours).
+
 -Evaluate and Predict: The model is evaluated on test data and predictions are made for future requests.
+
 -Plot Results: Original, predicted, and forecasted values are plotted for visualization.
 
 # Running the Project
